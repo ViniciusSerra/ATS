@@ -4,6 +4,8 @@ spring:
     username: admin
     password: admin
     driver-class-name: com.mysql.cj.jdbc.Driver
+    autoconfigure:
+      exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
 
   jpa:
     hibernate:
@@ -12,6 +14,5 @@ spring:
 
 server:
   port: 8080
-  servlet:
-    context-path: /myapp
+
 
